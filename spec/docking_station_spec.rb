@@ -6,7 +6,7 @@ describe DockingStation do
   end
   it 'gets a bike and check if working' do
     bike = DockingStation.new.release_bike
-    expect(bike).to be_working
+    expect(bike).to respond_to :working?
   end
 
 end

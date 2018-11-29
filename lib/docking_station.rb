@@ -12,8 +12,4 @@ class DockingStation
     @bike = bike
   end
 
-  #def status
-   # @bike
-  #end
-
 end

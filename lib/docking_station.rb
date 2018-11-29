@@ -2,22 +2,27 @@ require_relative "bike"
 
 class DockingStation
   
-  attr_reader :bike
-    
+  attr_reader :bikes
+
+  def initialize(bikes = [])
+    @bikes = bikes
+  end
+
   def release_bike
-    if @bike.nil?
+    if @bikes.nil?
       raise "The bike does not exist"
     else
-      @bike
+      @bikes
     end
   end
 
   def return_bike(bike)
-    if @bike != nil
-      raise "Fuck off mate"
-    else  
-      @bike = bike
-    end
+    @bikes = bike
+    #if @bike != nil
+     # raise "Fuck off mate"
+    #else  
+    #  @bike = bike
+    #end
   end
 
 end

@@ -37,4 +37,9 @@ describe DockingStation do
     expect{ subject.release_bike }.to raise_error("The bike does not exist")
   end
 
+  it "raises an error if trying to dock more than capacity" do
+    subject.return_bike(Bike.new)
+    expect{ subject.return_bike(Bike.new) }.to raise_error("Fuck off mate")
+  end
+
 end

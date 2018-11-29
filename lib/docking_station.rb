@@ -13,7 +13,11 @@ class DockingStation
   end
 
   def return_bike(bike)
-    @bike = bike
+    if @bike != nil
+      raise "Fuck off mate"
+    else  
+      @bike = bike
+    end
   end
 
 end

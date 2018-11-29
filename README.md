@@ -1,4 +1,4 @@
-# Boris Bike Challanges
+# Boris Bike Challenges
 
 ## Goals
 Mindful engagement with these challenges can help you achieve these goals:
